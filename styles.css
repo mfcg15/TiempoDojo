@@ -1,0 +1,191 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav
+{
+    background-color: #9fc5f8;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_contenedor
+{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 28px 0px 20px 0px;
+}
+
+h1
+{
+    font-size: 42px;
+}
+
+.nav_listas
+{
+    display: flex;
+    list-style-type:none;
+    align-items: center;
+    justify-content: space-around;
+    width: 43%;
+}
+
+li
+{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_cabecera
+{
+    border-bottom: 1px solid black;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.mca_izquierda
+{
+    padding: 10px 0px 10px 0px;
+}
+
+h2
+{
+    font-size: 34px;
+}
+
+.mca_derecha
+{
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+}
+
+select
+{
+    border: 1px solid black;
+    width: 16%;
+}
+
+p
+{
+    font-size: 22px;
+}
+
+.main_imagen
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo_imagen
+{
+    width: 20%;
+    background-color: #eeeeee;
+    padding: 8px;
+}
+
+.subtitulos
+{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.ci_superior
+{
+    text-align: center;
+}
+
+.imagen_clima
+{
+    border-radius: 50%;
+    background-color: white;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 5px;
+}
+
+.ci_inferior
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textoRojo
+{
+    color: red;   
+}
+
+.textoAzul
+{
+    color: blue;
+}
+
+.main_cookie
+{
+    border: 2px solid black;
+    background-color: #eeeeee;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+.mc_izquierdo , .mc_derecho
+{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.mc_centro
+{
+    width: 66%;
+    padding: 10px 0px 10px 0px;
+}
+
+.botonAzul
+{
+    background-color: #9fc5f8;
+    font-weight: 500;
+    padding: 5px 15px 5px 15px;
+    border: 2px solid black;
+    box-shadow: 4px 2px black;
+    cursor: pointer;
+    font-size: 22px;
+}

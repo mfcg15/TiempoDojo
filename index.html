@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_contenedor">
+            <h1>DojoWeater</h1>
+            <ul class="nav_listas">
+                <li onclick="showAlert()">Burbank</li>
+                <li onclick="showAlert()">Chicago</li>
+                <li onclick="showAlert()">Dallas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_cabecera">
+            <div class="mca_izquierda">
+                <h2>San Jose</h2>
+            </div>
+            <div class="mca_derecha">
+                <p>show temperature in</p>
+                <select name="comboxGrados" id="opcionesGrados" onchange="ElegirGrados(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="main_imagen">
+            <div class="campo_imagen">
+                <div class="ci_superior">
+                    <p class="subtitulos">Today</p>
+                    <img src="Imagenes/some_rain.png" alt="imagen_today" class="imagen_clima">
+                    <p>some rain</p>
+                </div>
+                <div class="ci_inferior">
+                    <span class="textoRojo">24°</span>
+                    <span class="textoAzul">18°</span>
+                </div>
+            </div>
+            <div class="campo_imagen">
+                <div class="ci_superior">
+                    <p class="subtitulos">Tomorrow</p>
+                    <img src="Imagenes/some_sun.png" alt="imagen_tomorrow" class="imagen_clima">
+                    <p>some sun</p>
+                </div>
+                <div class="ci_inferior">
+                    <span class="textoRojo">27°</span>
+                    <span class="textoAzul">19°</span>
+                </div>
+            </div>
+            <div class="campo_imagen">
+                <div class="ci_superior">
+                    <p class="subtitulos">Friday</p>
+                    <img src="Imagenes/some_clouds.png" alt="imagen_friday" class="imagen_clima">
+                    <p>some clouds</p>
+                </div>
+                <div class="ci_inferior">
+                    <span class="textoRojo">21°</span>
+                    <span class="textoAzul">16°</span>
+                </div>
+            </div>
+            <div class="campo_imagen">
+                <div class="ci_superior">
+                    <p class="subtitulos">Saturday</p>
+                    <img src="Imagenes/some_sun.png" alt="imagen_saturday" class="imagen_clima">
+                    <p>some sun</p>
+                </div>
+                <div class="ci_inferior">
+                    <span class="textoRojo">26°</span>
+                    <span class="textoAzul">21°</span>
+                </div>
+            </div>
+        </div>
+        <div class="main_cookie" id="cookie">
+            <div class="mc_izquierdo">
+                <img src="Imagenes/cookie.png" alt="imagen_cookie">
+            </div>
+            <div class="mc_centro">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffiec. <a href="#">Read more...</a></p>
+            </div>
+            <div class="mc_derecho">
+                <button class="botonAzul" onclick="dimissCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
