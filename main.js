@@ -1,9 +1,10 @@
 const divCookie = document.getElementById("cookie");
 const listaGrados = document.querySelectorAll("span");
 
-function showAlert()
+function showAlert(elemento)
 {
-    alert("Cargando informe meteorológico…")
+    let ciudad = elemento.innerText;
+    alert("Cargando informe meteorológico de "+ciudad)
 }
 
 function dimissCookie()
